@@ -158,7 +158,10 @@ const Dashboard = () => {
 
         {/* Quick Actions */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-          <Card className="hover:shadow-elegant transition-shadow cursor-pointer">
+          <Card 
+            className="hover:shadow-elegant transition-shadow cursor-pointer"
+            onClick={() => navigate("/negotiation-assistant")}
+          >
             <CardHeader className="flex flex-row items-center space-y-0 pb-3">
               <div className="bg-primary-gradient p-2 rounded-lg mr-3">
                 <Plus className="w-5 h-5 text-primary-foreground" />
@@ -170,7 +173,10 @@ const Dashboard = () => {
             </CardHeader>
           </Card>
 
-          <Card className="hover:shadow-elegant transition-shadow cursor-pointer">
+          <Card 
+            className="hover:shadow-elegant transition-shadow cursor-pointer"
+            onClick={() => navigate("/contract-analyzer")}
+          >
             <CardHeader className="flex flex-row items-center space-y-0 pb-3">
               <div className="bg-primary-gradient p-2 rounded-lg mr-3">
                 <FileText className="w-5 h-5 text-primary-foreground" />
@@ -182,14 +188,17 @@ const Dashboard = () => {
             </CardHeader>
           </Card>
 
-          <Card className="hover:shadow-elegant transition-shadow cursor-pointer">
+          <Card 
+            className="hover:shadow-elegant transition-shadow cursor-pointer"
+            onClick={() => navigate("/contract-generator")}
+          >
             <CardHeader className="flex flex-row items-center space-y-0 pb-3">
               <div className="bg-primary-gradient p-2 rounded-lg mr-3">
                 <MessageSquare className="w-5 h-5 text-primary-foreground" />
               </div>
               <div>
-                <CardTitle className="text-lg">AI Assistant</CardTitle>
-                <CardDescription>Get negotiation advice and strategies</CardDescription>
+                <CardTitle className="text-lg">Generate Contract</CardTitle>
+                <CardDescription>Create legal documents with AI</CardDescription>
               </div>
             </CardHeader>
           </Card>
@@ -219,7 +228,7 @@ const Dashboard = () => {
                 <p className="text-muted-foreground mb-4">
                   Start your first negotiation to see it here
                 </p>
-                <Button variant="gradient">
+                <Button variant="gradient" onClick={() => navigate("/negotiation-assistant")}>
                   <Plus className="w-4 h-4 mr-2" />
                   Start Negotiation
                 </Button>
