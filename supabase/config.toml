@@ -1,1 +1,10 @@
 project_id = "zftvlzzgxbghtzwsnbnt"
+
+[functions.ai-contract-analyzer]
+verify_jwt = true
+
+[functions.ai-negotiation-assistant] 
+verify_jwt = true
+
+[functions.ai-contract-generator]
+verify_jwt = true
