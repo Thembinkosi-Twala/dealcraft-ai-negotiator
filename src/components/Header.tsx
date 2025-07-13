@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Scale, Brain, Users, FileText } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+  
   return (
     <header className="bg-background border-b border-border shadow-card">
       <div className="container mx-auto px-6 py-4">
@@ -17,16 +20,16 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-muted-foreground hover:text-foreground transition-smooth">Features</a>
-            <a href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-smooth">How It Works</a>
-            <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-smooth">Pricing</a>
+            <Button variant="ghost" size="sm" onClick={() => navigate("/")}>Home</Button>
+            <Button variant="ghost" size="sm" onClick={() => navigate("/dashboard")}>Dashboard</Button>
+            <Button variant="ghost" size="sm" onClick={() => navigate("/contract-analyzer")}>Analyze</Button>
           </nav>
           
           <div className="flex items-center gap-3">
-            <Button variant="ghost" size="sm" onClick={() => window.location.href = '/auth'}>
+            <Button variant="ghost" size="sm" onClick={() => navigate('/auth')}>
               Sign In
             </Button>
-            <Button variant="gradient" size="sm" onClick={() => window.location.href = '/auth'}>
+            <Button variant="gradient" size="sm" onClick={() => navigate('/auth')}>
               Start Free Trial
             </Button>
           </div>

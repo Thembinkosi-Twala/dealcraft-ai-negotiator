@@ -215,7 +215,7 @@ const Dashboard = () => {
                 </CardTitle>
                 <CardDescription>Your latest deals and negotiations</CardDescription>
               </div>
-              <Button variant="outline" size="sm">
+              <Button variant="outline" size="sm" onClick={() => navigate("/negotiation-assistant")}>
                 View All
               </Button>
             </div>
