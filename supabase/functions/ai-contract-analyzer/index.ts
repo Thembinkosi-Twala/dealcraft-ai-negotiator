@@ -34,7 +34,7 @@ serve(async (req) => {
     4. Negotiation opportunities
     5. Overall fairness assessment
     
-    Provide a structured JSON response with clear, actionable insights.`;
+    Provide a clear, readable analysis with actionable insights formatted in plain text.`;
 
     const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
