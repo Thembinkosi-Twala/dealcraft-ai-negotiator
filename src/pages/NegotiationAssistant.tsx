@@ -136,7 +136,7 @@ const NegotiationAssistant = () => {
     try {
       const selectedNeg = negotiations.find(n => n.id === selectedNegotiation);
       const negotiationContext = selectedNeg ? 
-        `Negotiation: ${selectedNeg.title}. Description: ${selectedNeg.description}. Counterparty: ${selectedNeg.counterparty_name}. Deal Value: $${selectedNeg.deal_value?.toLocaleString() || 'TBD'}` 
+        `Negotiation: ${selectedNeg.title}. Description: ${selectedNeg.description}. Counterparty: ${selectedNeg.counterparty_name}. Deal Value: R${selectedNeg.deal_value?.toLocaleString() || 'TBD'}` 
         : '';
 
       const { data, error } = await supabase.functions.invoke('ai-negotiation-assistant', {
@@ -249,7 +249,7 @@ const NegotiationAssistant = () => {
                           {negotiation.status}
                         </Badge>
                         {negotiation.deal_value && (
-                          <span className="text-xs font-medium">${negotiation.deal_value.toLocaleString()}</span>
+                          <span className="text-xs font-medium">R{negotiation.deal_value.toLocaleString()}</span>
                         )}
                       </div>
                     </div>
@@ -402,7 +402,7 @@ const NegotiationAssistant = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="deal-value">Deal Value ($)</Label>
+                  <Label htmlFor="deal-value">Deal Value (R)</Label>
                   <Input
                     id="deal-value"
                     type="number"
