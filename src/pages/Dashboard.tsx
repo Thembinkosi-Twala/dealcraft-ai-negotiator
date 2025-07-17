@@ -253,7 +253,7 @@ const Dashboard = () => {
                       {negotiation.deal_value && (
                         <div className="text-right">
                           <p className="font-semibold text-foreground">
-                            ${negotiation.deal_value.toLocaleString()}
+                            R{negotiation.deal_value.toLocaleString()}
                           </p>
                         </div>
                       )}
