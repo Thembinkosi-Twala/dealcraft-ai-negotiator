@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-primary-foreground/60">
-          <p>&copy; 2024 LegalAI Pro. All rights reserved.</p>
+          <p>&copy; 2025 LegalAI Pro. All rights reserved. | InterDevTech</p>
         </div>
       </div>
     </footer>
