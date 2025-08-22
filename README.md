@@ -23,10 +23,3 @@ An AI-powered negotiation and contract drafting assistant that handles business 
 * **Dynamic Contract Generation**: After a deal is reached, the AI dynamically generates legally binding agreements that are fully customized for the specific terms of the business deal.
 
 ---
-
-## Industries It Can Disrupt
-
-* **Legal Tech** ($60+ Billion Market): Reduces dependency on lawyers for routine, repetitive contract work.
-* **Freelance & SMB Market** ($1+ Trillion Market): Empowers individuals and small businesses to confidently negotiate salaries, contracts, and payment terms.
-* **Corporate Mergers & Acquisitions** ($3+ Trillion Market): Speeds up the often slow and complex process of large-scale deal-making.
-* **E-commerce & Vendor Negotiations** ($5+ Trillion Market): Enables businesses to optimize supplier pricing and terms, directly impacting their bottom line.
