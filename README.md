@@ -1,7 +1,5 @@
 # The AI-Powered Legal & Business Negotiation Bot
 
-## The Big Idea
-
 An AI-powered negotiation and contract drafting assistant that handles business deals, legal agreements, and financial negotiations autonomously. This bot is designed to save companies and individuals significant time and money by automating a wide range of high-stakes negotiations.
 
 ---
